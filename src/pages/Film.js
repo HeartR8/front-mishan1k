@@ -1,23 +1,23 @@
-import it from "../../resources/images/1.jpg";
-import Header from "../Header";
+import Header from "./Header";
 
-export default function Demon() {
+export default function Film(props) {
     return (
         <div className="container">
             <Header/>
 
             <hr/>
 
-            <h1>Оно</h1>
+            <h1>{props.film_name}</h1>
             <div className="product_img_and_short_descroption">
-                <a href={it} target="_blank">
-                    <img src={it} alt="Оно" className="film_image"/>
+                <a href={props.film_image} target="_blank">
+                    <img src={props.film_image} alt="Дом на другой стороне" className="film_image"/>
                 </a>
                 <div className="product_short_description_wrap">
                     <h2 className="product_header">Описание фильма</h2>
                     <p className="product_short_description">
-                        <b>Оно</b> краткое описание
+                        <b>Дом на другой стороне</b> — мистический фильи про призраков
                     </p>
+                    <a href="#" className="like">Лайк</a>
                 </div>
             </div>
 
@@ -30,14 +30,13 @@ export default function Demon() {
 
             <h2 className="product_header">Подробное описание фильма</h2>
             <div className="product_full_description">
-                <p>
-                    <b>Здесь должен быть сюжетт</b><br/>
-                </p>
+                <b>Здесь должен быть сюжетт</b><br/>
             </div>
+
 
             <hr/>
             <div className="footer">
-                Оно<br/>
+                Дом на другой стороне<br/>
             </div>
         </div>
     )

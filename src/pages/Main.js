@@ -59,9 +59,9 @@ export default function Main() {
                             <div className="root_main">
                                 <Link to="catalog" >Каталог</Link>
                                 <div className="dropdown_main">
-                                    <a href="catalog/ghost.html">Призраки</a>
-                                    <a href="catalog/demon.html">Демоны</a>
-                                    <a href="catalog/killers.html">Маньяки</a>
+                                    <Link to="/ghost">Призраки</Link>
+                                    <Link to="/demon">Демоны</Link>
+                                    <Link to="/killer">Маньяки</Link>
                                 </div>
                             </div>
                             <div className="root_main">
@@ -74,64 +74,64 @@ export default function Main() {
                             Новинки кино
                         </div>
                         <div className="content_right_product">
-                            <a href="catalog/ghost.html" className="product_unit product_unit_new">
+                            <Link to="/demon" className="product_unit product_unit_new">
                                 <img src={it} alt="Оно"/>
                                 <div className="product_unit_name">
                                     Оно
                                 </div>
-                            </a>
-                            <a href="catalog/ghost.html" className="product_unit product_unit_hot">
+                            </Link>
+                            <Link to="/killer" className="product_unit product_unit_hot">
                                 <img src={shine} alt="Сияние"/>
                                 <div className="product_unit_name">
                                     Сияние
                                 </div>
-                            </a>
-                            <a href="catalog/ghost.html" className="product_unit">
+                            </Link>
+                            <Link to="/ghost" className="product_unit">
                                 <img src={houseOnTheOtherSide} alt="Дом на другой стороне"/>
                                 <div className="product_unit_name">
                                     Дом на другой стороне
                                 </div>
-                            </a>
-                            <a href="catalog/ghosthtml" className="product_unit product_unit_new">
+                            </Link>
+                            <Link to="/demon" className="product_unit product_unit_new">
                                 <img src={it} alt="Оно"/>
                                 <div className="product_unit_name">
                                     Оно
                                 </div>
-                            </a>
-                            <a href="catalog/ghost.html" className="product_unit product_unit_hot">
+                            </Link>
+                            <Link to="/killer" className="product_unit product_unit_hot">
                                 <img src={shine} alt="Сияние"/>
                                 <div className="product_unit_name">
                                     Сияние
                                 </div>
-                            </a>
-                            <a href="catalog/ghost.html" className="product_unit">
+                            </Link>
+                            <Link to="/ghost" className="product_unit">
                                 <img src={houseOnTheOtherSide} alt="Дом на другой стороне"/>
                                 <div className="product_unit_name">
                                     Дом на другой стороне
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                         <div className="content_right_header">
                             Хиты нашего сайта
                         </div>
-                        <a href="catalog/ghost.html" className="product_unit product_unit_new">
+                        <Link to="/demon" className="product_unit product_unit_new">
                             <img src={it} alt="Оно"/>
                             <div className="product_unit_name">
                                 Оно
                             </div>
-                        </a>
-                        <a href="catalog/ghost.html" className="product_unit product_unit_hot">
+                        </Link>
+                        <Link to="/killer" className="product_unit product_unit_hot">
                             <img src={shine} alt="Сияние"/>
                             <div className="product_unit_name">
                                 Оно2
                             </div>
-                        </a>
-                        <a href="catalog/ghost.html" className="product_unit">
+                        </Link>
+                        <Link to="/ghost" className="product_unit">
                             <img src={houseOnTheOtherSide} alt="Дом на другой стороне"/>
                             <div className="product_unit_name">
                                 Дом на другой стороне
                             </div>
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="instagram_feed_wrap">
@@ -169,9 +169,9 @@ export default function Main() {
                                 Меню
                             </div>
                             <div className="column_link">
-                                <a href="index.html">Главная</a>
-                                <a href="catalog.html">Каталог</a>
-                                <a href="contacts.html">Контакты</a>
+                                <Link to="/">Главная</Link>
+                                <Link to="/catalog">Каталог</Link>
+                                <Link to="/contacts">Контакты</Link>
                             </div>
                         </div>
                         <div>
