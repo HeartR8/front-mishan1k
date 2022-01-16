@@ -1,0 +1,74 @@
+body {
+    background: darksite;
+    margin: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    background-color: gray;
+}
+
+.header {
+    height: 150px;
+    background: url('../images/fon.jpg') repeat;
+}
+
+.menu {
+    list-style-type: none;
+    float: right;
+    margin-right: 15px;
+    padding: 0;
+    height: 30px;
+}
+
+.root {
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+    text-align: center;
+    width: 112px;
+}
+
+.root::before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+    content: "";
+}
+
+.root a {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    vertical-align: bottom;
+    background-color: darkgrey;
+}
+
+.root a:hover {
+    color: rgb(1, 86, 107);
+    font-size: 24px;
+}
+
+.root:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: relative;
+    left: -18px;
+    width: 180%;
+    list-style-type: none;
+    text-align: left;
+}
+
+.footer {
+    text-align: right;
+    height: 100px;
+    background: black;
+    padding: 15px 15px 0 0;
+    color: white;
+}

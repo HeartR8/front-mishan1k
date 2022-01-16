@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Main from "./pages/Main";
+import Contacts from "./pages/Contacts";
+import Catalog from "./pages/Catalog";
+import Killer from "./pages/categories/Killer";
+import Ghost from "./pages/categories/Ghost";
+import Demon from "./pages/categories/Demon";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Main/>}/>
+                <Route exact path="catalog" element={<Catalog/>}/>
+                <Route path="killer" element={<Killer/>}/>
+                <Route path="ghost" element={<Ghost/>}/>
+                <Route path="demon" element={<Demon/>}/>
+                <Route path="contacts" element={<Contacts/>}/>
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
