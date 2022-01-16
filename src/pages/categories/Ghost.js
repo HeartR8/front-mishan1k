@@ -1,28 +1,11 @@
-import logo from '../../resources/images/logo.png';
-import {Link} from "react-router-dom";
 import houseOnTheOtherSide from '../../resources/images/3.jpg';
+import Header from "../Header";
 
 export default function Ghost() {
     return (
         <div className="container">
-            <div className="header">
-                <img src={logo} alt="Логотип"/>
-                <div className="site_name">
-                    <strong>Дом ужасов</strong>
-                </div>
-                <ul className="menu">
-                    <li className="root"><Link to={'/'}>Главная</Link></li>
-                    <li className="root">
-                        <Link to={'/catalog'}>Каталог</Link>
-                        <ul className="dropdown">
-                            <li><Link to="/ghost">Призраки</Link></li>
-                            <li><Link to="/demon">Демоны</Link></li>
-                            <li><Link to="/killer">Маньяки</Link></li>
-                        </ul>
-                    </li>
-                    <li className="root"><Link to={'/contacts'}>Контакты</Link></li>
-                </ul>
-            </div>
+            <Header/>
+
             <hr/>
 
             <h1>Дом на другой стороне</h1>

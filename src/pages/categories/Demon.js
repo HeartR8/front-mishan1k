@@ -1,28 +1,11 @@
 import it from "../../resources/images/1.jpg";
-import {Link} from "react-router-dom";
-import logo from "../../resources/images/logo.png";
+import Header from "../Header";
 
 export default function Demon() {
     return (
         <div className="container">
-            <div className="header">
-                <img src={logo} alt="Логотип"/>
-                <div className="site_name">
-                    <strong>Дом ужасов</strong>
-                </div>
-                <ul className="menu">
-                    <li className="root"><Link to={'/'}>Главная</Link></li>
-                    <li className="root">
-                        <Link to={'/catalog'}>Каталог</Link>
-                        <ul className="dropdown">
-                            <li><Link to={'/ghost'}>Призраки</Link></li>
-                            <li><Link to={'/demon'}>Демоны</Link></li>
-                            <li><Link to={'/killer'}>Маньяки</Link></li>
-                        </ul>
-                    </li>
-                    <li className="root"><Link to={'/contacts'}>Контакты</Link></li>
-                </ul>
-            </div>
+            <Header/>
+
             <hr/>
 
             <h1>Оно</h1>
@@ -35,7 +18,6 @@ export default function Demon() {
                     <p className="product_short_description">
                         <b>Оно</b> краткое описание
                     </p>
-                    {/*<a href="#" className="like">Лайк</a>*/}
                 </div>
             </div>
 

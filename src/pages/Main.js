@@ -19,8 +19,6 @@ export default function Main() {
         <div className="body_main">
             <div className="header_main">
                 <div className="main_wrap">
-                    {/*<a href="index.html" className="logo"/>*/}
-                    {/*<Link to="/" className="logo"></Link>*/}
                     <div className="site_name_wrap">
                         <div className="site_name_main">
                             Дом ужасов
